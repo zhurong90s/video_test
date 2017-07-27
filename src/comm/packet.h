@@ -1,7 +1,17 @@
-#include <stdint.h>
-
 #ifndef PACKET_H
 #define PACKET_H
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdint.h>
+#include <unistd.h>
+#include <malloc.h>
+#include <sys/socket.h>
+#include <sys/types.h>
+#include <netinet/in.h>
+#include <netdb.h>
+#include <arpa/inet.h>
 
 typedef uint32_t packet_lenght;
 #define VIDEO_HEAD_TYPE_DATA        0x01
